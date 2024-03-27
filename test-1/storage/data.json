@@ -12,5 +12,19 @@
 		{"name": "hany", "revenue": 2502000000},
 		{"name": "rony", "revenue": 1958000000},
 		{"name": "dary", "revenue": 2056000000}
+	],
+	"earningsByMonth": [
+		{"month": "january", "amount": 266208010.38},
+		{"month": "february", "amount": 97863853.89},
+		{"month": "march", "amount": 294828504.52},
+		{"month": "april", "amount": 455488141.65},
+		{"month": "may", "amount": 146000000.00},
+		{"month": "june", "amount": 433084021.06},
+		{"month": "july", "amount": 332727659.00},
+		{"month": "august", "amount": 205740205.88},
+		{"month": "september", "amount": 112085691.40},
+		{"month": "october", "amount": 54864540.62},
+		{"month": "november", "amount": 98041613.44},
+		{"month": "december", "amount": 493700000.00}
 	]
 }

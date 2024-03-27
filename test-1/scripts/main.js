@@ -20,8 +20,8 @@ function setConsultant(data) {
 	var innerHTML = ''
 	consultants.forEach((consultant) => {
 		innerHTML += `<div class="consultant-lader">
-		<div class="consultant-revenue">${formatNumber(consultant['revenue'])}</div>
-		<div class="consultant-name">${consultant['name']}</div>
+		<div class="consultant-revenue"><h6>${formatNumber(consultant['revenue'])}</h6></div>
+		<div class="consultant-name"><h6>${consultant['name']}</h6></div>
 		</div>`
 	})
 	$('#consultants-stats').html(innerHTML)

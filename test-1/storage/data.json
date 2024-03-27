@@ -1,0 +1,16 @@
+{
+	"earnings": {
+		"earnings": {
+			"amount": 20606000000,
+			"currency": "egyptian pound"
+		},
+		"paid-calls": 1198
+	},
+	"consultant": [
+		{"name": "mohamed", "revenue": 2007000000},
+		{"name": "kisho", "revenue": 1824000000},
+		{"name": "hany", "revenue": 2502000000},
+		{"name": "rony", "revenue": 1958000000},
+		{"name": "dary", "revenue": 2056000000}
+	]
+}

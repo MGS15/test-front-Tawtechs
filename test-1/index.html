@@ -71,33 +71,182 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="row g-0">
 			<div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-2">
-				<div class="card"></div>
+				<div class="card">
+					<div id="total-bills">
+						<div class="bills-chart-container">
+							<div id="paid-bills"></div>
+							<div id="paid-bills-info">
+								<h3 class="text-secondary">total paid</h3>
+								<h4 id="total-paid-bills"></h4>
+								<h6 class="text-secondary">calls</h6>
+							</div>
+						</div>
+						<hr class="hr">
+						<div class="bills-chart-container">
+							<div id="unpaid-bills"></div>
+							<div id="unpaid-bills-info">
+								<h3 class="text-secondary">total unpaid</h3>
+								<h4 id="total-unpaid-bills"></h4>
+								<h6 class="text-secondary">calls</h6>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-2">
-				<div class="card"></div>
+				<div class="card">
+					calendar here
+				</div>
 			</div>
 			<div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-2">
-				<div class="card"></div>
+				<div class="card">
+					<div class="courses">
+						<div>
+							<h3>enrolled courses</h3>
+						</div>
+						<div>
+							<span id="number-courses"></span>
+							<span class="text-secondary" style="font-size: x-small;">courses</span>
+						</div>
+						<div>
+							<h4 class="text-secondary">average</h4>
+							<h3 class="text-warning" id="average-courses"></h3>
+						</div>
+						<div id="courses-chart"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-2">
+				<div class="card">
+					<div class="trainnig">
+						<h6 class="text-secondary">top 5</h6>
+						<h3>training levels</h3>
+						<h6 class="text-secondary">revenue</h6>
+						<div id="trainning-lader"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-4">
+				<div class="card">
+					<div class="calls-by-month">
+						<div class="calls-by-month-head">
+							<h3>average calls by month</h3>
+							<h3 style="font-size: xx-large; color: #563D7C;" id="average-calls"></h3>
+						</div>
+						<div id="calls-by-month-chart"></div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<br><br>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-3" style="height: 100px; background: red;"></div>
-			<div class="col-lg-5" style="height: 100px; background: blue;"></div>
-			<div class="col-lg-2" style="height: 100px; background: green;"></div>
-			<div class="col-lg-2" style="height: 100px; background: pink;"></div>
-		</div>
-	</div>
-	<br><br>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-4" style="height: 100px; background: red;"></div>
-			<div class="col-lg-2" style="height: 100px; background: blue;"></div>
-			<div class="col-lg-3" style="height: 100px; background: green;"></div>
-			<div class="col-lg-3" style="height: 100px; background: pink;"></div>
+		<div class="row g-0">
+			<div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-3">
+				<div class="grouped-card">
+					<div class="advertizing-head">
+						<h3>advertizing channels</h3>
+					</div>
+					<div id="advertising-channels"></div>
+					<div id="advertising-details"></div>
+				</div>
+			</div>
+			<div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+				<div class="container-fluid">
+					<div class="row g-0">
+						<div class="col-12">
+							<div class="grouped-card">
+								<div class="container-fluid">
+									<div class="row g-4">
+										<div class="col-8">
+											<div id="paid-calls-duration-chart"></div>
+										</div>
+										<div class="col-4">
+											<div id="paid-calls-duration-details">
+												<h6>average</h6>
+												<h3>paid calls duration</h3>
+												<h6 class="text-secondary">by month</h6>
+												<div id="duration-stats">
+													<div class="duration-average">
+														<h2 id="average-duration"><span>mm:ss</span></h2>
+													</div>
+													<div class="duration-min-max">
+														<div id="min-duration">
+															<h3 class="text-danger">▼</h3>
+															<h3>Minimum</h3>
+															<h6 class="text-secondary" id="duration-min"></h6>
+															<span class="text-secondary">mm:ss</span>
+														</div>
+														<div id="max-duration">
+															<h3 class="text-success">▲</h3>
+															<h3>Maximum</h3>
+															<h6 class="text-secondary" id="duration-max"></h6>
+															<span class="text-secondary">mm:ss</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row g-0">
+						<div class="col-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5">
+							<div class="grouped-card">
+								<div id="sales-by-team">
+									<div id="sales-by-team-details">
+										<div id="sales-head">
+											<h6 class="text-secondary">total sales by</h6>
+											<h3>sales team</h3>
+										</div>
+										<div id="sales-stats">
+											<div class="badge">
+												<img src="./assets/badge.png" alt="badge">
+											</div>
+											<div id="best-selling">
+												<h3 id="best-selling-team"></h3>
+												<h3 id="best-selling-amount"></h3>
+												<span class="text-secondary">
+													top selling sales team
+												</span>
+											</div>
+										</div>
+									</div>
+									<div id="sales-by-team-chart"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7">
+							<div class="grouped-card">
+								<div class="sales-by-consultant">
+									<div id="sales-consultant-details">
+										<div id="sales-consultant-head">
+											<h3>consultant</h3>
+											<h6 class="text-secondary">by total sales</h6>
+										</div>
+										<div id="consultant-best-selling">
+											<h3 id="best-selling-consultant"></h3>
+											<h3 id="best-selling-consultant-amount"></h3>
+											<span class="text-secondary">
+												top selling consultant team
+											</span>
+										</div>
+									</div>
+									<div id="sales-consultant-chart"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-3">
+				<div class="grouped-card"></div>
+			</div>
+			<div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-2">
+				
+			</div>
 		</div>
 	</div>
 

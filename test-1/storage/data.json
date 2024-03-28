@@ -26,5 +26,86 @@
 		{"month": "october", "amount": 54864540.62},
 		{"month": "november", "amount": 98041613.44},
 		{"month": "december", "amount": 493700000.00}
+	],
+	"totalBills": {
+		"total": 2783,
+		"paid": 2063,
+		"unpaid": 720
+	},
+	"courses": [
+		{"name": "java", "students": 260},
+		{"name": "c++", "students": 157},
+		{"name": "css", "students": 503},
+		{"name": "javascript", "students": 240},
+		{"name": "html", "students": 457},
+		{"name": "python", "students": 225},
+		{"name": "ruby", "students": 380},
+		{"name": "c#", "students": 307},
+		{"name": "php", "students": 356},
+		{"name": "sql", "students": 551}
+	],
+	"trainningLader": [
+		{"name": "mohamed", "level": 5, "revenue": 34567},
+		{"name": "kisho", "level": 4, "revenue": 234234},
+		{"name": "hany", "level": 2, "revenue": 432525},
+		{"name": "rony", "level": 1, "revenue": 234242},
+		{"name": "dary", "level": 3, "revenue": 545436}
+	],
+	"callsByMonth": [
+		{"month": "january", "calls": 200},
+		{"month": "february", "calls": 150},
+		{"month": "march", "calls": 300},
+		{"month": "april", "calls": 400},
+		{"month": "may", "calls": 100},
+		{"month": "june", "calls": 350},
+		{"month": "july", "calls": 250},
+		{"month": "august", "calls": 200},
+		{"month": "september", "calls": 150},
+		{"month": "october", "calls": 100},
+		{"month": "november", "calls": 150},
+		{"month": "december", "calls": 300}
+	],
+	"advertisingChannels": {
+		"maxBudget": 250000,
+		"channels": [
+			{"name": "facebook", "budget": 200000},
+			{"name": "google", "budget": 150000},
+			{"name": "twitter", "budget": 173987},
+			{"name": "youtube", "budget": 123456},
+			{"name": "company website", "budget": 40000},
+			{"name": "instagram", "budget": 102550}
+		]
+	},
+	"callsDetailsByMonth": [
+		{"month": 1, "duration": 199},
+		{"month": 2, "duration": 150},
+		{"month": 3, "duration": 300},
+		{"month": 4, "duration": 400},
+		{"month": 5, "duration": 100},
+		{"month": 6, "duration": 350},
+		{"month": 7, "duration": 250},
+		{"month": 8, "duration": 200},
+		{"month": 9, "duration": 150},
+		{"month": 10, "duration": 100},
+		{"month": 11, "duration": 150},
+		{"month": 12, "duration": 300}
+	],
+	"salesByTeam": [
+		{"team": "Bayblo", "sales": 345689765},
+		{"team": "Houssam", "sales": 157665750},
+		{"team": "Rovan", "sales": 194797657},
+		{"team": "Haidy", "sales": 297657865}
+	],
+	"salesByConsultant": [
+		{"name": "mohamed", "sales": 3456789},
+		{"name": "kisho", "sales": 2345678},
+		{"name": "hany", "sales": 1234567},
+		{"name": "rony", "sales": 2345678},
+		{"name": "dary", "sales": 3456789},
+		{"name": "andre", "sales": 2345678},
+		{"name": "paul", "sales": 1234567},
+		{"name": "mico", "sales": 2345678},
+		{"name": "franky", "sales": 3456789},
+		{"name": "nacho", "sales": 2345678}
 	]
 }

@@ -22,16 +22,23 @@ body {
 h3 {
 	font-size: var(--h3-size);
 	text-transform: capitalize;
+	margin: 0;
 }
 
 h4 {
 	font-size: var(--h4-size);
 	text-transform: capitalize;
+	margin: 0;
 }
 
 h6 {
 	font-size: var(--span-size);
 	text-transform: capitalize;
+	margin: 0;
+}
+
+span {
+	margin: 0
 }
 
 .card {
@@ -121,7 +128,7 @@ h6 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	row-gap: .3em;
+	row-gap: .5em;
 }
 
 .consultant-lader {
@@ -165,5 +172,267 @@ h6 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: center;
+}
+
+#total-bills {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.bills-chart-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	gap: 2rem;
+}
+
+.courses {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	gap: .5rem
+}
+
+.courses div {
+	width: 100%;
+}
+
+#number-courses {
+	color: #563D7C;
+	font-size: var(--h3-size);
+	font-weight: 600;
+}
+
+#average-courses {
+	font-weight: 600;
+}
+
+.trainnig {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+}
+
+#trainning-lader {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	column-gap: .5rem;
+	row-gap: .5rem;
+}
+
+.trainning-lader {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.trainning-revenue {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: end;
+}
+
+.trainning-name {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	text-transform: capitalize;
+}
+
+.calls-by-month {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+
+.calls-by-month-head {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	row-gap: .7rem;
+}
+
+#calls-by-month-chart {
+	width: 100%;
+}
+
+.vertical-card-group {
+	width: 100%;
+	height: 550px;
+	background-color: aqua;
+	display: flex;
+	flex-direction: column;
+}
+
+.horizontal-card-group {
+	width: 100%;
+	height: 550px;
+	background-color: coral;
+	display: flex;
+	flex-direction: row;
+}
+
+.grouped-card {
+	background-color: var(--card-color);
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	margin: var(--card-margin) !important;
+	padding: var(--card-padding);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s ease;
+	/* height: 100%; */
+	flex-grow: 1;
+}
+
+.grouped-card h3, .grouped-card h4, .grouped-card p {
+	margin: 0;
+}
+
+.grouped-card:hover {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.advertizing-head {
+	width: 100%;
+}
+
+#advertising-details {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	row-gap: 1rem;
+}
+
+#advertising-details div {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+
+#paid-calls-duration-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.duration-average {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: .5rem;
+	font-size: 18px;
+	border-radius: 10px;
+	background-color: #563D7C;
+	color: white;
+	margin-bottom: 1rem;
+}
+
+.duration-average > span {
+	font-size: 14px;
+}
+
+.duration-min-max {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+
+.duration-min-max div {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: .5rem;
+}
+
+#sales-by-team {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+
+#sales-by-team-chart {
+	width: 100%;
+}
+
+#sales-by-team-details {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.badge img {
+	width: 40px;
+}
+
+#sales-stats {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	align-items: center;
+}
+
+.sales-by-consultant {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#sales-consultant-details {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
 }

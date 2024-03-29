@@ -107,5 +107,27 @@
 		{"name": "mico", "sales": 2345678},
 		{"name": "franky", "sales": 3456789},
 		{"name": "nacho", "sales": 2345678}
+	],
+	"trainningFeesByTeam": [
+		{"team": "Pre", "fees": 456422, "level": 1},
+		{"team": "Pre", "fees": 345678, "level": 2},
+		{"team": "Pre", "fees": 234567, "level": 3},
+		{"team": "Pre", "fees": 123456, "level": 4},
+		{"team": "KJI", "fees": 234567, "level": 5},
+		{"team": "FNDN", "fees": 345678, "level": 1},
+		{"team": "FNDN", "fees": 234567, "level": 2},
+		{"team": "FNDN", "fees": 123456, "level": 3},
+		{"team": "FNDN", "fees": 234567, "level": 4}
+	],
+	"areas": [
+		{"name": "A1", "value": 200},
+		{"name": "A2", "value": 150},
+		{"name": "A3", "value": 300},
+		{"name": "A4", "value": 350},
+		{"name": "A7", "value": 250},
+		{"name": "B12", "value": 200},
+		{"name": "B13", "value": 150},
+		{"name": "B18", "value": 100},
+		{"name": "C8", "value": 300}
 	]
 }

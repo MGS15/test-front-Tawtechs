@@ -1,7 +1,8 @@
 $(window).on('load', function () {
 	$.getJSON('./storage/data.json', function (data) {
 		({ earnings, consultant, earningsByMonth, totalBills, courses, trainningLader, callsByMonth,
-			advertisingChannels, callsDetailsByMonth, salesByTeam, salesByConsultant } = data)
+			advertisingChannels, callsDetailsByMonth, salesByTeam, salesByConsultant, trainningFeesByTeam,
+			areas } = data)
 		setEarnings(earnings)
 		setConsultant(consultant)
 		setEarningsByMonth(earningsByMonth)
@@ -13,6 +14,8 @@ $(window).on('load', function () {
 		setCallDetailsByMonth(callsDetailsByMonth)
 		setSalesByTeam(salesByTeam)
 		setSalesByConsultant(salesByConsultant)
+		setTrainningFeesByTeam(trainningFeesByTeam)
+		setAreas(areas)
 	});
 })
 
@@ -401,7 +404,6 @@ function setSalesByTeam(salesByTeam) {
 	const bestSelling = salesByTeam.find(team => team['sales'] === Math.max(...sales))
 	$('#best-selling-team').html(bestSelling['team'])
 	$('#best-selling-amount').html(shortenAmount(bestSelling['sales']))
-	console.log(salesByTeam)
 }
 
 function setSalesByConsultant(salesByConsultant) {
@@ -418,28 +420,27 @@ function setSalesByConsultant(salesByConsultant) {
 		],
 		chart: {
 			width: '100%',
-			height: 200,
+			height: 215,
 			type: 'bar',
 			toolbar: {show: false},
 			selection: {enabled: false},
 			zoom: {enabled: false},
 		},
-		colors: ['#5E0FDD', '#F76385', '#F1C03D', '#009D1F'],
+		colors: ['#5E0FDD'],
 		plotOptions: {
-			bar: {
-				borderRadius: 4,
-				horizontal: true,
-				barHeight: '50%',
-				distributed: true,
-			}
+			bar: {barHeight: '10%'}
 		},
 		dataLabels: {
 			enabled: true,
-			formatter: () => shortenAmount(val)
+			formatter: function (val) {
+				if (val >= 1e9) return (val / 1e9).toFixed(1) + 'B';
+				else if (val >= 1e6) return (val / 1e6).toFixed(1) + 'M';
+				else if (val >= 1e3) return (val / 1e3).toFixed(1) + 'K';
+				else return val;
+			}
 		},
 		xaxis: {
-			categories: consultants,
-			labels: {show: false},
+			categories: consultants
 		},	
 		yaxis: {
 			categories: consultants,
@@ -451,6 +452,126 @@ function setSalesByConsultant(salesByConsultant) {
 	$('#best-selling-consultant').html(bestSelling['name'])
 	$('#best-selling-consultant-amount').html(shortenAmount(bestSelling['sales']))
 
+}
+
+function setTrainningFeesByTeam(trainningFeesByTeam) {
+
+	const fees = []
+	const teams = []
+	const levels = []
+	trainningFeesByTeam.forEach((team) => {
+		teams.push(team['team'] + ' L.' + team['level'])
+		fees.push(team['fees'])
+		levels.push(team['level'])
+	})
+
+	const chart1options = {
+		series: [
+			{name: "fees", data: fees}
+		],
+		chart: {
+			width: '100%',
+			height: 300,
+			type: 'bar',
+			group: 'trainnings',
+			toolbar: {show: false},
+			selection: {enabled: false},
+			zoom: {enabled: false},
+		},
+		title: {
+			text: 'Trainning fees by team',
+			align: 'left'
+		},
+		colors: ['#5E0FDD'],
+		plotOptions: {
+			bar: {
+				horizontal: true,
+				barHeight: '50%',
+			}
+		},
+		dataLabels: {
+			enabled: true,
+			formatter: function(val) {
+				if (val >= 1e9) return (val / 1e9).toFixed(1) + 'B';
+				else if (val >= 1e6) return (val / 1e6).toFixed(1) + 'M';
+				else if (val >= 1e3) return (val / 1e3).toFixed(1) + 'K';
+				else return val;
+			}
+		},
+		xaxis: {
+			categories: teams,
+			labels: {show: false},
+		}
+	}
+
+	const chart2options = {
+		series: [
+			{name: "fees", data: fees}
+		],
+		chart: {
+			width: '100%',
+			height: 250,
+			type: 'line',
+			group: 'trainnings',
+			toolbar: {show: false},
+			selection: {enabled: false},
+			zoom: {enabled: false},
+		},
+		grid: {
+			yaxis: {
+				lines: {show: false}
+			}
+		},
+		markers: {
+			size: 5,
+			colors: '#ffffff',
+			strokeColors: '#5E0FDD',
+		},
+		colors: ['#5E0FDD'],
+		stroke: {width: 2},
+		yaxis: {
+			labels: {show: false}
+		},
+		xaxis: {
+			categories: teams,
+			labels: {show: true},
+		}
+	}
+
+	const chart1 = new ApexCharts(document.querySelector("#training-char-1"), chart1options);
+	chart1.render();
+	const chart2 = new ApexCharts(document.querySelector("#training-char-2"), chart2options);
+	chart2.render();
+}
+
+function setAreas(areas) {
+	const areaNames = []
+	const areaValues = []
+	areas.forEach((area) => {
+		areaNames.push(area['name'])
+		areaValues.push(area['value'])
+	})
+	const options = {
+		series:[{
+			name: 'areas',
+			data: areaValues
+		}],
+		chart: {
+			height: 300,
+			type: 'radar',
+			toolbar: {show: false},
+			selection: {enabled: false},
+			zoom: {enabled: false},
+		},
+		title: {
+			text: 'Area codes',
+			align: 'center',
+			margin: 20,
+		},
+		xaxis: {categories: areaNames}
+	}
+	const chart = new ApexCharts(document.querySelector("#areas"), options);
+	chart.render();
 }
 
 function setValueToElement(elemID, value) {

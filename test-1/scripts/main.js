@@ -2,7 +2,7 @@ $(window).on('load', function () {
 	$.getJSON('./storage/data.json', function (data) {
 		({ earnings, consultant, earningsByMonth, totalBills, courses, trainningLader, callsByMonth,
 			advertisingChannels, callsDetailsByMonth, salesByTeam, salesByConsultant, trainningFeesByTeam,
-			areas } = data)
+			areas, trainningModules, trainningModulesFees } = data)
 		setEarnings(earnings)
 		setConsultant(consultant)
 		setEarningsByMonth(earningsByMonth)
@@ -16,6 +16,8 @@ $(window).on('load', function () {
 		setSalesByConsultant(salesByConsultant)
 		setTrainningFeesByTeam(trainningFeesByTeam)
 		setAreas(areas)
+		setTrainningModules(trainningModules)
+		setTrainningModulesFees(trainningModulesFees)
 	});
 })
 
@@ -557,7 +559,7 @@ function setAreas(areas) {
 			data: areaValues
 		}],
 		chart: {
-			height: 300,
+			height: '100%',
 			type: 'radar',
 			toolbar: {show: false},
 			selection: {enabled: false},
@@ -572,6 +574,111 @@ function setAreas(areas) {
 	}
 	const chart = new ApexCharts(document.querySelector("#areas"), options);
 	chart.render();
+}
+
+function setTrainningModules(trainningModules) {
+	const name = []
+	const value = []
+	trainningModules.forEach((module) => {
+		name.push(module['name'])
+		value.push(module['value'])
+	})
+	const options = {
+		series: value,
+		chart: {
+			height: '100%',
+			type: 'donut',
+			width: '100%',
+			toolbar: {show: false},
+			selection: {enabled: false},
+			zoom: {enabled: false},
+		},
+		colors: ['#5E0FDD', '#F76385', '#F1C03D', '#009D1F'],
+		labels: name,
+		title: {
+			text: 'Trainning modules',
+			align: 'center',
+		},
+		plotOptions: {
+			donut: {
+				size: '95%',
+				total: {show: true},
+				labels: {
+					show: true,
+					name: {
+						show: true,
+					},
+					value: {
+						show: true,
+					}
+				}
+			}
+		},
+		dataLabels: {
+			enabled: true,
+		},
+		xaxis: {
+			labels: {
+				show: false
+			},
+		}
+	}
+	const chart = new ApexCharts(document.querySelector("#trainning-modules"), options);
+	chart.render();
+
+}
+
+function setTrainningModulesFees(trainningModulesFees) {
+	const teams = Array.from(new Set(trainningModulesFees.map(team => team['team'])))
+	const modules = []
+	const fees = []
+	trainningModulesFees.forEach((team) => {
+		modules.push(team['module'])
+		fees.push(team['fees'])
+	})
+
+	const options = {
+		series: [
+			{name: "fees", data: fees},
+		],
+		title: {
+			text: 'Trainning modules fees',
+			align: 'left'
+		},
+		chart: {
+			width: '100%',
+			height: 215,
+			type: 'bar',
+			toolbar: {show: false},
+			selection: {enabled: false},
+			zoom: {enabled: false},
+		},
+		colors: ['#5E0FDD'],
+		plotOptions: {
+			bar: {
+				barWidth: '10%',
+			}
+		},
+		dataLabels: {
+			enabled: false,
+			formatter: function (val) {
+				if (val >= 1e9) return (val / 1e9).toFixed(1) + 'B';
+				else if (val >= 1e6) return (val / 1e6).toFixed(1) + 'M';
+				else if (val >= 1e3) return (val / 1e3).toFixed(1) + 'K';
+				else return val;
+			}
+		},
+		xaxis: {categories: modules},	
+		yaxis: {
+			labels: {show: false},
+		}
+	}
+	const chart = new ApexCharts(document.querySelector("#trainning-modules-fees-chart"), options);
+	chart.render();
+	$('#trainning-modules-teams').html(`
+		${
+			teams.map(team => `<span class="text-secondary">${team}</span>`).join('')
+		}`)
 }
 
 function setValueToElement(elemID, value) {

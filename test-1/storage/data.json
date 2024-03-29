@@ -129,5 +129,29 @@
 		{"name": "B13", "value": 150},
 		{"name": "B18", "value": 100},
 		{"name": "C8", "value": 300}
+	],
+	"trainningModules": [
+		{"name": "BE", "value": 3754865},
+		{"name": "CNI", "value": 1521866},
+		{"name": "FC", "value": 2986547},
+		{"name": "GK", "value": 974128}
+	],
+	"trainningModulesFees": [
+		{"team": "Haidy", "module": "BE", "fees": 456422},
+		{"team": "Haidy", "module": "CNI", "fees": 345678},
+		{"team": "Haidy", "module": "FC", "fees": 234567},
+		{"team": "Haidy", "module": "GK", "fees": 123456},
+		{"team": "Rovan", "module": "BE", "fees": 234567},
+		{"team": "Rovan", "module": "CNI", "fees": 345678},
+		{"team": "Rovan", "module": "FC", "fees": 234567},
+		{"team": "Rovan", "module": "GK", "fees": 123456},
+		{"team": "Houssam", "module": "BE", "fees": 234567},
+		{"team": "Houssam", "module": "CNI", "fees": 345678},
+		{"team": "Houssam", "module": "FC", "fees": 234567},
+		{"team": "Houssam", "module": "GK", "fees": 123456},
+		{"team": "Bayblo", "module": "BE", "fees": 234567},
+		{"team": "Bayblo", "module": "CNI", "fees": 345678},
+		{"team": "Bayblo", "module": "FC", "fees": 234567},
+		{"team": "Bayblo", "module": "GK", "fees": 123456}
 	]
 }

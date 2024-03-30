@@ -1,0 +1,120 @@
+{
+	"about": {
+		"title": "about me",
+		"cards": [
+			{
+				"title": "photographer",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis",
+				"icon": "/src/assets/camera.png"
+			},
+			{
+				"title": "music",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis",
+				"icon": "/src/assets/headset.png"
+			},
+			{
+				"title": "painting",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis",
+				"icon": "/src/assets/brush.png"
+			},
+			{
+				"title": "magic",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis",
+				"icon": "/src/assets/magic.png"
+			}
+		]
+	},
+	"services": {
+		"title": "services",
+		"cards": [
+			{
+				"title": "web design",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis. .",
+				"icon": "/src/assets/screen.png"
+			},
+			{
+				"title": "web development",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis. .",
+				"icon": "/src/assets/coding.png"
+			},
+			{
+				"title": "logo design",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis. .",
+				"icon": "/src/assets/diamond.png"
+			},
+			{
+				"title": "marketing",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis. .",
+				"icon": "/src/assets/chat.png"
+			},
+			{
+				"title": "design",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis. .",
+				"icon": "/src/assets/painting.png"
+			},
+			{
+				"title": "branding",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis. .",
+				"icon": "/src/assets/rocket.png"
+			}
+		]
+	},
+	"works": {
+		"title": "my work",
+		"types": ["slideshow", "video", "image"],
+		"projects": [
+			{"type": "slideshow", "image": "/src/assets/work-01.png"},
+			{"type": "slideshow", "image": "/src/assets/work-04.png"},
+			{"type": "slideshow", "image": "/src/assets/work-07.png"},
+			{"type": "video", "image": "/src/assets/work-02.png"},
+			{"type": "video", "image": "/src/assets/work-08.png"},
+			{"type": "video", "image": "/src/assets/work-05.png"},
+			{"type": "image", "image": "/src/assets/work-06.png"},
+			{"type": "image", "image": "/src/assets/work-03.png"},
+			{"type": "image", "image": "/src/assets/work-09.png"}
+		]
+	},
+	"testimonies": {
+		"title": "testimonies",
+		"cards": [
+			{
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis.",
+				"name": "Adam smith",
+				"position": "web developer"
+			},
+			{
+				"content": "Etiam blandit feugiat mi, ut cursus orci. Fusce at posuere orci. Aenean laoreet dictum lectus in rutrum. Suspendisse blandit arcu ac convallis facilisis. Quisque vel justo nec nibh.",
+				"name": "marry jane",
+				"position": "CTO"
+			},
+			{
+				"content": "Praesent erat dolor, pellentesque aliquam ante sed, maximus congue diam. Sed risus lorem, consectetur sit amet vehicula id, varius ut felis. Aenean eu elit nunc.",
+				"name": "John wick",
+				"position": "CFO"
+			}
+		]
+	},
+	"blog": {
+		"title": "blog",
+		"cards": [
+			{
+				"title": "10 tips for drawing with colored pencils",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis.",
+				"image": "/src/assets/blog-01.jpg",
+				"type": "design"
+			},
+			{
+				"title": "the single greatest gift to your friend who always travels",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis.",
+				"image": "/src/assets/blog-02.jpg",
+				"type": "travel"
+			},
+			{
+				"title": "why all women should eat alone",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis.",
+				"image": "/src/assets/blog-03.jpg",
+				"type": "passion"
+			}
+		]
+	}
+}

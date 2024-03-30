@@ -51,3 +51,27 @@ body {
 	content: ' }';
 		color: var(--secondary-color);
 }
+
+.gridd {
+	column-count: 1;
+	column-gap: 1em;
+}
+
+@media (min-width: 640px) {
+    .gridd {
+		column-count: 2;
+		column-gap: 1em;
+	}
+}
+
+@media (min-width: 1024px) {
+    .gridd {
+		column-count: 3;
+		column-gap: 1em;
+	}
+}
+  
+.grid-item {
+	break-inside: avoid;
+	margin-bottom: 1em;
+}

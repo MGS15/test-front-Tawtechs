@@ -1,0 +1,62 @@
+{
+	"about": {
+		"title": "about me",
+		"cards": [
+			{
+				"title": "photographer",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis",
+				"icon": "/src/assets/camera.png"
+			},
+			{
+				"title": "music",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis",
+				"icon": "/src/assets/headset.png"
+			},
+			{
+				"title": "painting",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis",
+				"icon": "/src/assets/brush.png"
+			},
+			{
+				"title": "magic",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis",
+				"icon": "/src/assets/magic.png"
+			}
+		]
+	},
+	"services": {
+		"title": "services",
+		"cards": [
+			{
+				"title": "web design",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis. .",
+				"icon": "/src/assets/screen.png"
+			},
+			{
+				"title": "web development",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis. .",
+				"icon": "/src/assets/coding.png"
+			},
+			{
+				"title": "logo design",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis. .",
+				"icon": "/src/assets/diamond.png"
+			},
+			{
+				"title": "marketing",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis. .",
+				"icon": "/src/assets/chat.png"
+			},
+			{
+				"title": "design",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis. .",
+				"icon": "/src/assets/painting.png"
+			},
+			{
+				"title": "branding",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis. .",
+				"icon": "/src/assets/rocket.png"
+			}
+		]
+	}
+}

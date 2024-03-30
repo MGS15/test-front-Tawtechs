@@ -64,13 +64,13 @@
 		"types": ["slideshow", "video", "image"],
 		"projects": [
 			{"type": "slideshow", "image": "/src/assets/work-01.png"},
-			{"type": "video", "image": "/src/assets/work-02.png"},
-			{"type": "image", "image": "/src/assets/work-03.png"},
 			{"type": "slideshow", "image": "/src/assets/work-04.png"},
+			{"type": "slideshow", "image": "/src/assets/work-07.png"},
+			{"type": "video", "image": "/src/assets/work-02.png"},
+			{"type": "video", "image": "/src/assets/work-08.png"},
 			{"type": "video", "image": "/src/assets/work-05.png"},
 			{"type": "image", "image": "/src/assets/work-06.png"},
-			{"type": "slideshow", "image": "/src/assets/work-07.png"},
-			{"type": "video", "image": "/src/assets/work-08.png"},
+			{"type": "image", "image": "/src/assets/work-03.png"},
 			{"type": "image", "image": "/src/assets/work-09.png"}
 		]
 	},

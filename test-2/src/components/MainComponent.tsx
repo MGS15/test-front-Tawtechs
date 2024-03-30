@@ -1,4 +1,6 @@
 import About from "./About";
+import Blog from "./Blog";
+import Freelancing from "./Freelancing";
 import Header from "./Header";
 import Hero from "./Hero";
 import MyWork from "./MyWork";
@@ -14,6 +16,8 @@ const MainComponent = () => {
 			<Services />
 			<MyWork />
 			<Testimony />
+			<Blog />
+			<Freelancing />
 		</>
 	);
 }

@@ -4,7 +4,7 @@ import SectionTitle from "./Common/SectionTitle";
 
 const NavButton = ({index, current, onSelect}: {index: number, current: number, onSelect: (index: number) => void}) => (
 	<span onClick={() => onSelect(index)}
-		className={`${index === current ? "w-10 bg-secondary" : "w-4 bg-gray-300"}
+		className={`${index === current ? "w-10 bg-secondary" : "w-4 bg-gray-300 cursor-pointer"}
 		h-4 rounded-full transition-all duration-500`}
 	></span>
 )

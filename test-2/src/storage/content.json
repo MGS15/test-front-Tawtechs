@@ -93,5 +93,28 @@
 				"position": "CFO"
 			}
 		]
+	},
+	"blog": {
+		"title": "blog",
+		"cards": [
+			{
+				"title": "10 tips for drawing with colored pencils",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis.",
+				"image": "/src/assets/blog-01.jpg",
+				"type": "design"
+			},
+			{
+				"title": "the single greatest gift to your friend who always travels",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis.",
+				"image": "/src/assets/blog-02.jpg",
+				"type": "travel"
+			},
+			{
+				"title": "why all women should eat alone",
+				"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor mi risus, quis eleifend felis auctor quis. Mauris cursus dolor quis nisl interdum, ac cursus justo sagittis.",
+				"image": "/src/assets/blog-03.jpg",
+				"type": "passion"
+			}
+		]
 	}
 }
